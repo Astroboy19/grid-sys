@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template:0.3fr 0.3fr 0.3fr 1fr 0.3fr/ 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-areas:
+    "nav nav nav nav" 
+    "chrjm1 chrjm2 chrjm3 chrjm4"
+    "chrjm5 chrjm6 chrjm7 chrjm8"
+    "main main main main" 
+    "footer footer footer footer";
+    grid-gap: 5px;
+
+
+}
+.box .nav{
+    background-color: rgb(224, 109, 56);
+    grid-area: nav;
+    font-size: xx-large;
+}
+.box .chrjm-1{
+    background-color: rgb(224, 185, 56);
+    grid-area: chrjm1;
+    font-size: xx-large;
+}
+
+
+.box .chrjm-2{
+    background-color: rgb(132, 224, 56);
+    grid-area: chrjm2;
+    font-size: xx-large;
+}
+
+
+.box .chrjm-3{
+    background-color: rgb(47, 177, 138);
+    grid-area: chrjm3;
+    font-size: xx-large;
+}
+
+
+.box .chrjm-4{
+    background-color: rgb(56, 109, 224);
+    grid-area: chrjm4;
+    font-size: xx-large;
+}
+
+.box .chrjm-5{
+    background-color: rgb(101, 56, 224);
+    grid-area: chrjm5;
+    font-size: xx-large;
+}
+
+.box .chrjm-6{
+    background-color: rgb(196, 56, 224);
+    grid-area: chrjm6;
+    font-size: xx-large;
+}
+
+.box .chrjm-7{
+    background-color: rgb(224, 56, 148);
+    grid-area: chrjm7;
+    font-size: xx-large;
+}
+
+.box .chrjm-8{
+    background-color: rgb(224, 56, 56);
+    grid-area: chrjm8;
+    font-size: xx-large;
+}
+
+.box .main{
+    background-color: rgba(100, 98, 102, 0.575);
+    grid-area: main;
+    font-size: xx-large;
+}
+
+.box .footer{
+    background-color: rgba(53, 9, 20, 0.911);
+    grid-area: footer;
+    font-size: xx-large;
+}
+
+@media (max-width:600px){
+ .box{
+    grid-template:0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 1fr 0.3fr/ 1fr 1fr;
+    grid-template-areas:
+    "nav nav" 
+    "chrjm1 chrjm2"
+    "chrjm3 chrjm4"
+    "chrjm5 chrjm6"
+    "chrjm7 chrjm8"
+    "main main"  
+    "footer footer";
+ }
+}
+
+
